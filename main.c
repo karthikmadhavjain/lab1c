@@ -1,9 +1,10 @@
 #include<stdio.h>
 #include<readline/readline.h>
+#include<stdlib.h>
 
 int main(void){
   char *tempc = readline("Enter temperature in celcius");
-  double newtempc = atof(tempc);
-  double newtempf = ((newtempc)+32);
-  printf("%f° in Celsius is equivalent to %f° Fahrenheit.\n",newtempc,newtempf);
+  double tempf;
+  tempf = atof(tempc);
+  printf("%f° in Celsius is equivalent to %f° Fahrenheit.\n",tempc,tempf);
 }
