@@ -3,7 +3,7 @@
 #include<stdlib.h>
 
 int main(void){
-  char *tempc = readline("Enter temperature in celcius: ");
+  char *tempc = readline("Enter temperature in celsius: ");
   double tempf,newtempc;
   newtempc = atof(tempc);
   tempf = ((newtempc*1.8)+32);
